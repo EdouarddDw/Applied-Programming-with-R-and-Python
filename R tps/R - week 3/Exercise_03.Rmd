@@ -1,0 +1,34 @@
+---
+title: "<center> <h1>R Notebook</h1> </center>"
+output: html_notebook
+---
+
+# Exercise 35 R Markdown
+
+&nbsp;
+
+### **Table of Contents**
+
+* Arithmetic Mean
+* Mean Squared Error
+    - Bias of an estimator
+    - Variance of an estimator
+    
+---
+
+## 1. Arithmetic Mean
+
+$$Mean(x) = \frac{1}{n}\sum_{i=1}^{n}x_{i}$$
+Embed an inline calculation, i.e. 24 + 15 = `r 24 + 15`
+    
+```{r}
+#Actual R Calculation:
+
+x = c(1,3,9,4)
+x_bar = 1/length(x)*sum(x)
+x_bar
+```
+
+## 2. Mean Squared Error
+$$MSE(\hat{\theta}) = Var_{\theta}(\hat{\theta}) + Bias_{\theta}(\hat{\theta}, \theta)^{2}$$
+For further information see: [https://en.wikipedia.org/wiki/Mean_squared_error](https://en.wikipedia.org/wiki/Mean_squared_error)
